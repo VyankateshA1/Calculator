@@ -1,14 +1,22 @@
 #calculator{
-    border: 1px solid black;
-    width: 200px;
+    border: 2px solid black;
+    width: 230px;
+   border-radius: 4px;
 }
 
+.main{
+    margin: 50px 0px;
+    justify-content: center;
+    display: flex;
+    
+}
 #display{
     margin: 10px;
     width: 85%;
     font-size: 25px;
 }
 .btn{
+    
     display: flex;
     align-content: center;
     justify-content: center;
@@ -18,5 +26,9 @@
 }
 .btn-cls{
     width: 40px;
+    color: black;
+    background-color: rgb(225, 202, 202);
     height: 40px;
+    border-radius: 4px;
+    font-size: 18px;
 }
