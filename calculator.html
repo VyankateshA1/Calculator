@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div class="btn">
+            <button class="btn-cls" onclick="currentD = '';
+            document.querySelector('#display').value=currentD;">C</button>
+
+            <button class="btn-cls" onclick="currentD += '1';
+            document.querySelector('#display').value=currentD;">1</button>
+
+            <button 
+            class="btn-cls" onclick="currentD += '2';
+            document.querySelector('#display').value=currentD;">2</button>
+
+            <button class="btn-cls" onclick="currentD += '3';
+            document.querySelector('#display').value=currentD;">3</button>
+
+            <button class="btn-cls "onclick="currentD += '+';
+            document.querySelector('#display').value=currentD;">+</button>
+
+            <button class="btn-cls"onclick="currentD += '4';
+            document.querySelector('#display').value=currentD;">4</button>
+
+            <button class="btn-cls" onclick="currentD += '5';
+            document.querySelector('#display').value=currentD;">5</button>
+
+            <button class="btn-cls" onclick="currentD += '6';
+            document.querySelector('#display').value=currentD;">6</button>
+
+            <button class="btn-cls" onclick="currentD += '-';
+            document.querySelector('#display').value=currentD;">-</button>
+
+            <button class="btn-cls" onclick="currentD += '7';
+            document.querySelector('#display').value=currentD;">7</button>
+
+            <button class="btn-cls" onclick="currentD += '8';
+            document.querySelector('#display').value=currentD;">8</button>
+
+            <button class="btn-cls" onclick="currentD += '9';
+            document.querySelector('#display').value=currentD;">9</button>
+
+            <button class="btn-cls" onclick="currentD += '/';
+            document.querySelector('#display').value=currentD;">/</button>
+
+            <button class="btn-cls" onclick="
+            currentD = eval(currentD);
+            document.querySelector('#display').value=currentD;">=</button>
+
+            <button class="btn-cls" onclick="currentD += '0';
+            document.querySelector('#display').value=currentD;">0</button>
+
+            <button class="btn-cls" onclick="currentD += '.';
+            document.querySelector('#display').value=currentD;">.</button>
+        </div>
+       
+    </div>
+
+    <script>
+        let currentD = '';
+document.querySelector("#display").value = currentD;
+    </script>
+</body>
+</html>
